@@ -1,0 +1,117 @@
+.background{
+    -fx-background-color: linear-gradient(to right, #e7baba, #94a9c4);
+}
+
+.background-login{
+    -fx-background-color: linear-gradient(to right, #7698e0, #b17de1);
+    -fx-background-radius: 100;
+    -fx-border-color: linear-gradient(to right, #05359a, #f52c53);
+    -fx-border-radius: 100;
+    -fx-border-width: 2;
+}
+.login-button {
+    -fx-background-color:  #3176FE;
+    -fx-background-radius: 20;
+    -fx-border-width: 2;
+    -fx-border-radius: 20;
+}
+
+.login-button:hover{
+    -fx-background-color: linear-gradient(to right, #008d03, #05a289);
+    -fx-background-radius: 20;
+    -fx-text-fill: -fx-text-base-color;
+    -fx-alignment: CENTER;
+    -fx-content-display: LEFT;
+}
+
+.login-text{
+    -fx-border-color: transparent transparent black transparent;
+    -fx-background-color: transparent;
+}
+
+.top-hbox{
+    -fx-background-color: linear-gradient(to right, #91D0CA, #bac7c0);
+}
+
+.left-vbox{
+    -fx-background-color: linear-gradient(to bottom, #eaeaea, #e8dcdc);
+}
+
+.anchor-pane{
+    -fx-background-color: linear-gradient(to right, #ffffff, #c9cad5);
+}
+
+.textLabel{
+    -fx-background-color: white;
+    -fx-padding: 0 5px 0px 5px;
+    -fx-font-weight: bold;
+    -fx-text-fill: rgba(76, 73, 73, 0.83);;
+    -fx-background-radius: 10;
+}
+
+.text-field{
+    -fx-background-color: white;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+    -fx-border-color: linear-gradient(to right bottom, #bb0e95, #00434c);
+}
+
+.button-save{
+    -fx-background-color: #0E68DB;
+    -fx-background-radius:20;
+}
+
+.button-green{
+    -fx-background-color: #1db41d;
+    -fx-background-radius:20;
+}
+
+.button-green:hover{
+    -fx-background-color: #3f8528;
+}
+.button-save:hover{
+    -fx-background-color: #1728d3;
+}
+
+.button-delete{
+    -fx-background-color: #B03027;
+    -fx-background-radius: 20;
+}
+
+.button-delete:hover{
+    -fx-background-color: #ff0000;
+}
+
+/*Table Styles Start*/
+.table-view:focused{
+    -fx-background-insets: 0px;
+}
+
+.table-view .column-header{
+    -fx-size:40px;
+    -fx-background-color: #7708f5;
+}
+
+.table-view .column-header .label{
+    -fx-text-fill: white;
+}
+
+.table-view .table-row-cell:empty{
+    -fx-background-color: white;
+}
+.table-view .table-row-cell:selected{
+    -fx-background-color:linear-gradient(to right, rgba(119, 8, 245, 0.29), rgba(15, 93, 255, 0.39));
+}
+
+.table-view .table-row-cell:selected *{
+    -fx-font-weight: bold;
+    -fx-text-fill: rgb(54, 49, 49);
+}
+
+.actionIcon{
+    -fx-cursor: hand;
+    -fx-text-fill: red;
+}
+
+
+/* Table styles ends */

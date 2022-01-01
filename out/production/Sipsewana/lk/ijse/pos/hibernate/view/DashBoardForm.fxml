@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.pos.hibernate.controller.DashBoardFormController">
+   <top>
+      <StackPane prefHeight="73.0" prefWidth="1200.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0" styleClass="top-hbox" stylesheets="@../asserts/styles/Style.css">
+               <children>
+                  <AnchorPane prefHeight="73.0" prefWidth="132.0">
+                     <children>
+                        <ImageView fitHeight="57.0" fitWidth="55.0" layoutX="39.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../asserts/images/logo.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="73.0" prefWidth="700.0">
+                     <children>
+                        <Label fx:id="lblTitle" alignment="CENTER" layoutX="377.0" layoutY="9.0" prefHeight="50.0" prefWidth="366.0" text="Course" AnchorPane.rightAnchor="65.0">
+                           <font>
+                              <Font name="Cooper Black" size="43.0" />
+                           </font>
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop color="#3c3a3a" />
+                                    <Stop color="#9a1717" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="73.0" prefWidth="366.0">
+                     <children>
+                        <Label fx:id="lblDate" layoutX="218.0" layoutY="24.0" text="2021 12-12">
+                           <font>
+                              <Font name="Cambria Bold" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblTime" layoutX="55.0" layoutY="26.0" text="12: 12 PM ">
+                           <font>
+                              <Font name="Cambria Bold" size="19.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="8.0" layoutY="26.0" text="Time :">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="172.0" layoutY="26.0" text="Date:">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Separator layoutX="158.0" layoutY="20.0" orientation="VERTICAL" prefHeight="33.0" prefWidth="4.0" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+         </children>
+      </StackPane>
+   </top>
+   <left>
+      <VBox prefHeight="727.0" prefWidth="230.0" styleClass="left-vbox" stylesheets="@../asserts/styles/Style.css" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="128.0" prefWidth="230.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <children>
+                  <ImageView fx:id="imgCourse" fitHeight="59.0" fitWidth="61.0" layoutX="86.0" layoutY="35.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asserts/images/course.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Label fx:id="lblCourse" alignment="CENTER" contentDisplay="CENTER" layoutX="71.0" layoutY="103.0" prefHeight="21.0" prefWidth="86.0">
+                     <font>
+                        <Font name="Franklin Gothic Demi Cond" size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="110.0" prefWidth="230.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <children>
+                  <ImageView fx:id="imgStudent" fitHeight="62.0" fitWidth="63.0" layoutX="84.0" layoutY="14.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asserts/images/student.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Label fx:id="lblStudent" alignment="CENTER" contentDisplay="CENTER" layoutX="69.0" layoutY="86.0" prefHeight="21.0" prefWidth="91.0">
+                     <font>
+                        <Font name="Franklin Gothic Demi Cond" size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="435.0" prefWidth="230.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <children>
+                  <ImageView fx:id="imgDetails" fitHeight="63.0" fitWidth="71.0" layoutX="85.0" layoutY="14.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asserts/images/details.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Label fx:id="lblDetails" alignment="CENTER" contentDisplay="CENTER" layoutX="70.0" layoutY="87.0" prefHeight="21.0" prefWidth="90.0">
+                     <font>
+                        <Font name="Franklin Gothic Demi Cond" size="22.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutX="15.0" layoutY="185.0" prefHeight="135.0" prefWidth="200.0" style="-fx-background-color: #f8f8f8; -fx-background-radius: 20;">
+                     <children>
+                        <Label fx:id="lblStudentCount" alignment="CENTER" layoutX="1.0" layoutY="23.0" prefHeight="73.0" prefWidth="199.0" text="25">
+                           <font>
+                              <Font name="Rockwell Extra Bold" size="60.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="-2.0" layoutY="96.0" prefHeight="21.0" prefWidth="202.0" text="Students">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <ImageView fx:id="imgLogOut" fitHeight="38.0" fitWidth="42.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/images/logout.png" />
+               </image>
+               <VBox.margin>
+                  <Insets left="16.0" top="3.0" />
+               </VBox.margin>
+            </ImageView>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane fx:id="loadContext" prefHeight="727.0" prefWidth="970.0" styleClass="anchor-pane" stylesheets="@../asserts/styles/Style.css" BorderPane.alignment="CENTER">
+         <children>
+            <Separator layoutX="-1.0" layoutY="6.0" orientation="VERTICAL" prefHeight="714.0" prefWidth="5.0" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

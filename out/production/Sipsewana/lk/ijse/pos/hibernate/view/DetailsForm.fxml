@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane prefHeight="727.0" prefWidth="970.0" styleClass="anchor-pane" stylesheets="@../asserts/styles/Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.pos.hibernate.controller.DetailsFormController">
+   <children>
+      <TableView fx:id="tblDetails" layoutX="15.0" layoutY="126.0" prefHeight="590.0" prefWidth="940.0" AnchorPane.bottomAnchor="11.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="126.0">
+        <columns>
+          <TableColumn fx:id="colRegId" prefWidth="134.0" text="RegId" />
+          <TableColumn fx:id="colCourseId" prefWidth="152.0" text="CourseId" />
+            <TableColumn fx:id="colStudentId" prefWidth="42.0" text="StudentId" />
+            <TableColumn fx:id="colRegDate" prefWidth="427.0" text="RegDate" />
+            <TableColumn fx:id="colSname" prefWidth="152.0" text="SName" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="200.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0">
+         <fill>
+            <LinearGradient endX="0.24757281553398056" endY="0.3252427184466019">
+               <stops>
+                  <Stop color="#97afff" />
+                  <Stop color="#ebebeb00" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <TextField fx:id="txtSearch" layoutX="84.0" layoutY="38.0" onAction="#searchDetailsOnAction" prefHeight="33.0" prefWidth="231.0" promptText="Search ......" />
+      <FontAwesomeIconView glyphName="SEARCH" layoutX="326.0" layoutY="63.0" size="24" />
+   </children>
+</AnchorPane>
